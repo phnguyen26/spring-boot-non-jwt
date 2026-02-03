@@ -39,7 +39,7 @@ public class NewAPI {
 		List<BuildingDTO> result = buildingService.find();
 		return result;
 //		if (!(name == null || name.isEmpty())) sql += " WHERE name LIKE '%" + name + "%'";
-
+//		test
 	}
 
 }
