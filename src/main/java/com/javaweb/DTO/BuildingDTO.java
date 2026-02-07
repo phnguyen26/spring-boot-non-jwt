@@ -2,8 +2,15 @@ package com.javaweb.DTO;
 
 public class BuildingDTO {
     private String name;
-    private Integer numberOfBasement;
     private String address;
+    private String numberOfBasement;
+    private String managerName;
+    private String managerPhoneNumber;
+    private String floorArea;
+    private String rentPrice;
+    private String serviceFee;
+    private String brokerageFee;
+    private String renArea;
 
     public String getName() {
         return name;
@@ -13,19 +20,75 @@ public class BuildingDTO {
         this.name = name;
     }
 
-    public Integer getNumberOfBasement() {
-        return numberOfBasement;
-    }
-
-    public void setNumberOfBasement(Integer numberOfBasement) {
-        this.numberOfBasement = numberOfBasement;
-    }
-
     public String getAddress() {
         return address;
     }
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getNumberOfBasement() {
+        return numberOfBasement;
+    }
+
+    public void setNumberOfBasement(String numberOfBasement) {
+        this.numberOfBasement = numberOfBasement;
+    }
+
+    public String getManagerName() {
+        return managerName;
+    }
+
+    public void setManagerName(String managerName) {
+        this.managerName = managerName;
+    }
+
+    public String getManagerPhoneNumber() {
+        return managerPhoneNumber;
+    }
+
+    public void setManagerPhoneNumber(String managerPhoneNumber) {
+        this.managerPhoneNumber = managerPhoneNumber;
+    }
+
+    public String getFloorArea() {
+        return floorArea;
+    }
+
+    public void setFloorArea(String floorArea) {
+        this.floorArea = floorArea;
+    }
+
+    public String getRentPrice() {
+        return rentPrice;
+    }
+
+    public void setRentPrice(String rentPrice) {
+        this.rentPrice = rentPrice;
+    }
+
+    public String getServiceFee() {
+        return serviceFee;
+    }
+
+    public void setServiceFee(String serviceFee) {
+        this.serviceFee = serviceFee;
+    }
+
+    public String getBrokerageFee() {
+        return brokerageFee;
+    }
+
+    public void setBrokerageFee(String brokerageFee) {
+        this.brokerageFee = brokerageFee;
+    }
+
+    public String getRenArea() {
+        return renArea;
+    }
+
+    public void setRenArea(String renArea) {
+        this.renArea = renArea;
     }
 }

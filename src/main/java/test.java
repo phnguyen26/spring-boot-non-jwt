@@ -11,11 +11,13 @@ public class test{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        try{
-//            if (n<0) throw new Exception("negative value is invalid");
-            System.out.println(Math.sqrt(n));
-        }catch(Exception e){
-            System.out.println(e.getMessage());
-        }
+        System.out.println(Math.sqrt(n));
+        System.out.println("aaa");
+//        try{
+//            System.out.println(Long.parseLong(n));
+//        }catch(NumberFormatException e){
+//            System.out.println(e.getMessage());
+//            System.out.println("loi ne");
+//        }
     }
 }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏢 Building Search System</h1>
+        
+        <div class="search-panel">
+            <h2>Search Criteria</h2>
+            <form id="searchForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Building Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter building name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="districtCode">District Code</label>
+                        <input type="text" id="districtCode" name="districtCode" placeholder="e.g., Q1, Q2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ward">Ward</label>
+                        <input type="text" id="ward" name="ward" placeholder="Enter ward">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="street">Street</label>
+                        <input type="text" id="street" name="street" placeholder="Enter street">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numberOfBasement">Number of Basements</label>
+                        <input type="number" id="numberOfBasement" name="numberOfBasement" placeholder="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="floorArea">Floor Area (m²)</label>
+                        <input type="number" id="floorArea" name="floorArea" placeholder="Enter floor area">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direction">Direction</label>
+                        <input type="text" id="direction" name="direction" placeholder="e.g., East, West">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="managerName">Manager Name</label>
+                        <input type="text" id="managerName" name="managerName" placeholder="Enter manager name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="managerPhoneNumber">Manager Phone</label>
+                        <input type="text" id="managerPhoneNumber" name="managerPhoneNumber" placeholder="Enter phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="staffID">Staff ID</label>
+                        <input type="number" id="staffID" name="staffID" placeholder="Enter staff ID">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="areaFrom">Rent Area From (m²)</label>
+                        <input type="number" id="areaFrom" name="areaFrom" placeholder="Min area">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="areaTo">Rent Area To (m²)</label>
+                        <input type="number" id="areaTo" name="areaTo" placeholder="Max area">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rentPriceFrom">Rent Price From</label>
+                        <input type="number" id="rentPriceFrom" name="rentPriceFrom" placeholder="Min price">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rentPriceTo">Rent Price To</label>
+                        <input type="number" id="rentPriceTo" name="rentPriceTo" placeholder="Max price">
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <label class="checkbox-label">Building Type</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="typeCodes" value="tang-tret">
+                            <span>Tầng trệt</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="typeCodes" value="nguyen-can">
+                            <span>Nguyên căn</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="typeCodes" value="noi-that">
+                            <span>Nội thất</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary">🔍 Search</button>
+                    <button type="button" class="btn btn-secondary" onclick="resetForm()">🔄 Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="results-panel">
+            <h2>Search Results <span id="resultCount"></span></h2>
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Searching...</p>
+            </div>
+            <div id="error" class="error-message" style="display: none;"></div>
+            <div id="results" class="results-grid"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
