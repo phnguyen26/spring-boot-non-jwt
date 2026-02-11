@@ -1,26 +1,26 @@
 package com.javaweb.entity;
 
 public class BuildingEntity {
-    private String id;
+    private Long id;
     private String name;
     private String street;
     private String ward;
-    private String districtID;
+    private Long districtId;
     private String structure;
-    private String numberOfBasement;
-    private String floorArea;
+    private Long numberOfBasement;
+    private Long floorArea;
     private String direction;
     private String level;
-    private String rentPrice;
+    private Long rentPrice;
     private String rentPriceDescription;
-    private String serviceFee;
-    private String carFee;
-    private String motorbikeFee;
-    private String overtimeFee;
-    private String waterFee;
-    private String electricityFee;
-    private String brokerageFee;
-    private String deposit;
+    private Long serviceFee;
+    private Long carFee;
+    private Long motorbikeFee;
+    private Long overtimeFee;
+    private Long waterFee;
+    private Long electricityFee;
+    private Long brokerageFee;
+    private Long deposit;
     private String payment;
     private String renttime;
     private String decorationTime;
@@ -35,20 +35,44 @@ public class BuildingEntity {
     private String managerName;
     private String managerPhoneNumber;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getDistrictID() {
-        return districtID;
+    public String getName() {
+        return name;
     }
 
-    public void setDistrictID(String districtID) {
-        this.districtID = districtID;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getWard() {
+        return ward;
+    }
+
+    public void setWard(String ward) {
+        this.ward = ward;
+    }
+
+    public Long getDistrictId() {
+        return districtId;
+    }
+
+    public void setDistrictId(Long districtId) {
+        this.districtId = districtId;
     }
 
     public String getStructure() {
@@ -59,11 +83,19 @@ public class BuildingEntity {
         this.structure = structure;
     }
 
-    public String getFloorArea() {
+    public Long getNumberOfBasement() {
+        return numberOfBasement;
+    }
+
+    public void setNumberOfBasement(Long numberOfBasement) {
+        this.numberOfBasement = numberOfBasement;
+    }
+
+    public Long getFloorArea() {
         return floorArea;
     }
 
-    public void setFloorArea(String floorArea) {
+    public void setFloorArea(Long floorArea) {
         this.floorArea = floorArea;
     }
 
@@ -83,11 +115,11 @@ public class BuildingEntity {
         this.level = level;
     }
 
-    public String getRentPrice() {
+    public Long getRentPrice() {
         return rentPrice;
     }
 
-    public void setRentPrice(String rentPrice) {
+    public void setRentPrice(Long rentPrice) {
         this.rentPrice = rentPrice;
     }
 
@@ -99,67 +131,67 @@ public class BuildingEntity {
         this.rentPriceDescription = rentPriceDescription;
     }
 
-    public String getServiceFee() {
+    public Long getServiceFee() {
         return serviceFee;
     }
 
-    public void setServiceFee(String serviceFee) {
+    public void setServiceFee(Long serviceFee) {
         this.serviceFee = serviceFee;
     }
 
-    public String getCarFee() {
+    public Long getCarFee() {
         return carFee;
     }
 
-    public void setCarFee(String carFee) {
+    public void setCarFee(Long carFee) {
         this.carFee = carFee;
     }
 
-    public String getMotorbikeFee() {
+    public Long getMotorbikeFee() {
         return motorbikeFee;
     }
 
-    public void setMotorbikeFee(String motorbikeFee) {
+    public void setMotorbikeFee(Long motorbikeFee) {
         this.motorbikeFee = motorbikeFee;
     }
 
-    public String getOvertimeFee() {
+    public Long getOvertimeFee() {
         return overtimeFee;
     }
 
-    public void setOvertimeFee(String overtimeFee) {
+    public void setOvertimeFee(Long overtimeFee) {
         this.overtimeFee = overtimeFee;
     }
 
-    public String getWaterFee() {
+    public Long getWaterFee() {
         return waterFee;
     }
 
-    public void setWaterFee(String waterFee) {
+    public void setWaterFee(Long waterFee) {
         this.waterFee = waterFee;
     }
 
-    public String getElectricityFee() {
+    public Long getElectricityFee() {
         return electricityFee;
     }
 
-    public void setElectricityFee(String electricityFee) {
+    public void setElectricityFee(Long electricityFee) {
         this.electricityFee = electricityFee;
     }
 
-    public String getBrokerageFee() {
+    public Long getBrokerageFee() {
         return brokerageFee;
     }
 
-    public void setBrokerageFee(String brokerageFee) {
+    public void setBrokerageFee(Long brokerageFee) {
         this.brokerageFee = brokerageFee;
     }
 
-    public String getDeposit() {
+    public Long getDeposit() {
         return deposit;
     }
 
-    public void setDeposit(String deposit) {
+    public void setDeposit(Long deposit) {
         this.deposit = deposit;
     }
 
@@ -265,37 +297,5 @@ public class BuildingEntity {
 
     public void setManagerPhoneNumber(String managerPhoneNumber) {
         this.managerPhoneNumber = managerPhoneNumber;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getNumberOfBasement() {
-        return numberOfBasement;
-    }
-
-    public void setNumberOfBasement(String numberOfBasement) {
-        this.numberOfBasement = numberOfBasement;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public String getWard() {
-        return ward;
-    }
-
-    public void setWard(String ward) {
-        this.ward = ward;
     }
 }

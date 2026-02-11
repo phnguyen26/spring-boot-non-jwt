@@ -6,5 +6,5 @@ import java.util.List;
 import java.util.Map;
 
 public interface BuildingService {
-   List<BuildingDTO> searchBuilding(Map<String, String> params, List<String> typeCodes);
+   List<BuildingDTO> searchBuilding(Map<String, Object> params, List<String> typeCodes);
 }

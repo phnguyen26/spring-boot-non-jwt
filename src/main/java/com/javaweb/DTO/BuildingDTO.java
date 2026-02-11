@@ -3,13 +3,13 @@ package com.javaweb.DTO;
 public class BuildingDTO {
     private String name;
     private String address;
-    private String numberOfBasement;
+    private Long numberOfBasement;
     private String managerName;
     private String managerPhoneNumber;
-    private String floorArea;
-    private String rentPrice;
-    private String serviceFee;
-    private String brokerageFee;
+    private Long floorArea;
+    private Long rentPrice;
+    private Long serviceFee;
+    private Long brokerageFee;
     private String renArea;
 
     public String getName() {
@@ -28,11 +28,11 @@ public class BuildingDTO {
         this.address = address;
     }
 
-    public String getNumberOfBasement() {
+    public Long getNumberOfBasement() {
         return numberOfBasement;
     }
 
-    public void setNumberOfBasement(String numberOfBasement) {
+    public void setNumberOfBasement(Long numberOfBasement) {
         this.numberOfBasement = numberOfBasement;
     }
 
@@ -52,35 +52,35 @@ public class BuildingDTO {
         this.managerPhoneNumber = managerPhoneNumber;
     }
 
-    public String getFloorArea() {
+    public Long getFloorArea() {
         return floorArea;
     }
 
-    public void setFloorArea(String floorArea) {
+    public void setFloorArea(Long floorArea) {
         this.floorArea = floorArea;
     }
 
-    public String getRentPrice() {
+    public Long getRentPrice() {
         return rentPrice;
     }
 
-    public void setRentPrice(String rentPrice) {
+    public void setRentPrice(Long rentPrice) {
         this.rentPrice = rentPrice;
     }
 
-    public String getServiceFee() {
+    public Long getServiceFee() {
         return serviceFee;
     }
 
-    public void setServiceFee(String serviceFee) {
+    public void setServiceFee(Long serviceFee) {
         this.serviceFee = serviceFee;
     }
 
-    public String getBrokerageFee() {
+    public Long getBrokerageFee() {
         return brokerageFee;
     }
 
-    public void setBrokerageFee(String brokerageFee) {
+    public void setBrokerageFee(Long brokerageFee) {
         this.brokerageFee = brokerageFee;
     }
 

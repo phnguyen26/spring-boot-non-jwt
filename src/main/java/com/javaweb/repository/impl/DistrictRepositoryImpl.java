@@ -8,7 +8,7 @@ import java.sql.*;
 @Repository
 public class DistrictRepositoryImpl implements DistrictRepository {
     @Override
-    public DistrictEntity findNameById(String id) {
+    public DistrictEntity findNameById(Long id) {
         String sql = "select d.name from district d where d.id = " + id;
         DistrictEntity districtEntity = new DistrictEntity();
         try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/batdongsan", "root", "582006")){

@@ -30,7 +30,7 @@ public class BuildingAPI {
 	@Autowired
 	BuildingService buildingService;
 	@GetMapping("/building")
-	public List<BuildingDTO> searchBuilding(@RequestParam Map<String, String> params,
+	public List<BuildingDTO> searchBuilding(@RequestParam Map<String, Object> params,
 								 @RequestParam(value = "typeCodes", required = false) List<String> typeCodes)
 		{
 		List<BuildingDTO> result = buildingService.searchBuilding(params, typeCodes);
